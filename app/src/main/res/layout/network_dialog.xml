@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dip">
+
+    <ProgressBar
+        style="@android:style/Widget.Material.Light.ProgressBar.Large"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminateTint="@color/calendar_selected_day_bg"
+        android:indeterminateTintMode="src_atop"
+        android:padding="10dip"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:text="请稍等，正在访问服务器..."
+        android:textSize="16sp" />
+
+</LinearLayout>

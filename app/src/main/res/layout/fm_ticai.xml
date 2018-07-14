@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_margin="20dip"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="1dip"
+                app:cardElevation="5dip">
+
+                <EditText
+                    android:id="@+id/ti_et_shang"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@null"
+                    android:maxLength="3"
+                    android:hint="输入上期号码"
+                    android:inputType="number"
+
+                    android:maxLines="1" />
+
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ti_zhongyao"
+                    android:layout_width="90dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="*重要参数："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ti_zhongyao_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edittext"
+                    android:digits="0123456789"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:hint="只能输入5位数"
+                    android:textSize="14sp"
+                    android:paddingLeft="3dip"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="组三与组六共用"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/btn_color_default2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dip"
+                    android:text="组6筛选条件"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="20dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="胆码："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_dan"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="杀码："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_sha"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="两码："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_liang"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="160dip"
+                        android:layout_height="wrap_content"
+
+                        android:text="胆码组（取相同号）："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_danzu"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="跨度："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_kua"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip" />
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="和尾值："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_he"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="断组："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_duan"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+
+                        android:text="复式："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_fu"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="杀组合："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_shazuhe"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/tiRecyclerView6"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/btn_color_default2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dip"
+                    android:text="精选组3"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:layout_marginRight="20dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="胆码："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_dan3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip"
+                        android:singleLine="true" />
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="杀组合："
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/ti_et_shazuhe3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_edittext"
+                        android:digits="0123456789-"
+                        android:imeOptions="actionDone"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="3dip"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/tiRecyclerView3"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/but_saixuan"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/but_shape"
+                android:text="保存过滤条件"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

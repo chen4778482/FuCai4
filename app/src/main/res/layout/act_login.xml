@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fucai4.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:text="激活码激活"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:gravity="center"
+                android:text="彩运通（珍藏版）(P3/3D/SSC)"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:text="帐号"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/login_ed_jiqi"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:focusable="false" />
+
+            <Button
+                android:id="@+id/but_fuzhi"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/but_jiqi"
+                android:text="点击复制帐号"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:text="密码"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/lonin_et_my"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                 />
+
+            <Button
+                android:id="@+id/but_lonin"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/but_shape"
+                android:text="密钥登录"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="40dip"
+                android:src="@mipmap/bg" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

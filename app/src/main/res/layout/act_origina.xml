@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.fucai4.view.TitleView
+        android:id="@+id/orig_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" />
+
+    <TextView
+        android:id="@+id/tv_y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bj"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:text="原始值 组6 （精选号）"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <com.example.fucai4.view.GridViewNO
+                    android:id="@+id/orig_gv_z6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="90dp"
+                    android:gravity="center"
+                    android:numColumns="7"
+                    android:paddingBottom="20dip"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@mipmap/bj"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:text="原始值 组3 （精选号）"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <com.example.fucai4.view.GridViewNO
+                    android:id="@+id/orig_gv_z3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnWidth="90dp"
+                    android:gravity="center"
+                    android:numColumns="7"
+                    android:paddingBottom="20dip"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bg" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

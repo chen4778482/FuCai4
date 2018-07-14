@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.fucai4.view.TitleView
+        android:id="@+id/inter_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="交集1" />
+
+            <EditText
+                android:id="@+id/inter_ed1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:minHeight="100dip"
+                android:padding="5dip"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="交集2" />
+
+            <EditText
+                android:id="@+id/inter_ed2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@drawable/bg_edittext"
+                android:gravity="top"
+                android:minHeight="100dip"
+                android:padding="5dip"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/inter_but_jiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/but_shape"
+                    android:text="求交集"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/inter_but_kong"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="2"
+                    android:background="@drawable/but_shape1"
+                    android:text="清空"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fd0404</color>
+    <color name="colorPrimaryDark">#fd0404</color>
+    <color name="colorAccent">#fd0404</color>
+
+    <color name="dim_foreground_dark">#bebebe</color>
+    <color name="red">#ffff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="huise">#1000</color>
+    <color name="beij">#fdc6c6</color>
+
+    <color name="keyguard_text_color_soundon">#e69310</color>
+    <color name="calendar_selected_day_bg">#3F51B5</color>
+    <color name="lv">#54C92D</color>
+
+</resources>

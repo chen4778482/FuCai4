@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.example.fucai4.view.TitleView
+        android:id="@+id/intresult_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bj"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.example.fucai4.view.GridViewNO
+            android:paddingTop="20dip"
+            android:id="@+id/interresul_gv_jihe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:numColumns="7"
+            android:paddingBottom="20dip"
+            android:stretchMode="columnWidth" />
+
+
+        <TextView
+            android:id="@+id/interresul_tv_fuzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="10dip"
+            android:text="复制(精选号)"
+
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
